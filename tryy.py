@@ -5,9 +5,9 @@ from datetime import datetime
 app = Flask(__name__)
 
 # MongoDB Connection
-MONGO_URI = os.environ.get("MONGO_URL")
+MONGO_URI = os.environ.get("MONGO_URI")
 
-client = MongoClient(MONGO_URL)
+client = MongoClient(MONGO_URI)
 
 db = client.iot_database
 
