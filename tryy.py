@@ -5,7 +5,7 @@ from datetime import datetime
 app = Flask(__name__)
 
 # MongoDB Connection
-MONGO_URI = "mongodb+srv://tusharadri123_db_user:Nur23hxV8s7g6NNO@cluster0.k4kjemp.mongodb.net/?appName=Cluster0"
+MONGO_URI = os.environ.get("MONGO_URL")
 
 client = MongoClient(MONGO_URI)
 
